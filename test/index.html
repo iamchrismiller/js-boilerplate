@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jasmine Test Runner</title>
+    <link rel="stylesheet" href="jasmine/jasmine.css"/>
+    <script src="jasmine/jasmine.js"></script>
+    <script src="jasmine/jasmine-html.js"></script>
+    <script src="../public/js/vendor/require-2.0.6.js"></script>
+</head>
+
+<body>
+<script type="text/javascript">
+    require.config({
+        paths : {
+            jquery  : '../public/vendor/jquery-1.8',
+            spec    : '../jasmine/spec'
+        }
+    });
+
+    function runTests() {
+        jasmine.getEnv().addReporter(new jasmine.HtmlReporter());
+        jasmine.getEnv().execute();
+    }
+
+    // Add source files here
+    var sourceFiles = [
+    ];
+
+    // Add mock data files here
+    var dataFiles = [
+    ];
+
+    // Add spec files here
+    var specs = [
+        'spec/example.spec.js'
+    ];
+
+    require(sourceFiles.concat(dataFiles), function() {
+        require(specs, runTests)
+    });
+</script>
+</body>
+</html>
