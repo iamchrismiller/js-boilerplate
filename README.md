@@ -21,7 +21,7 @@ Adopted OpenSource Libraries/Frameworks
 
   - Jasmine
     - ('a behavior-driven development framework for testing JavaScript code.'
-       -http://pivotal.github.com/jasmine/)
+       -https://jasmine.github.io/)
 
   - jQuery
     - ('a fast and concise JavaScript Library that simplifies HTML document traversing,
